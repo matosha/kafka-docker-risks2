@@ -1,7 +1,7 @@
 import requests,json
 from kafka import KafkaConsumer
 
-consumer = KafkaConsumer('tenable', group_id='my-group', bootstrap_servers=['localhost:9092'])
+consumer = KafkaConsumer('tenable', bootstrap_servers=['localhost:9092'])
 
 print("getty")
 for message in consumer:
