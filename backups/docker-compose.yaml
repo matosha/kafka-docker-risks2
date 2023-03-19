@@ -69,7 +69,7 @@ services:
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CLIENT:PLAINTEXT,INTER_BROKER:PLAINTEXT
       KAFKA_ADVERTISED_LISTENERS: CLIENT://broker1:9092,INTER_BROKER://broker1:9093
       KAFKA_INTER_BROKER_LISTENER_NAME: INTER_BROKER
-      command: "kafka-topics --create --topic tenable --partitions 3 --replication-factor 1 --if-not-exists --bootstrap-server broker1:9092"
+      #command: "kafka-topics --create --topic msfeed --partitions 1 --replication-factor 1 --if-not-exists --bootstrap-server localhost:9092"
 
   broker2:
     image: confluentinc/cp-kafka:latest #6.1.1
